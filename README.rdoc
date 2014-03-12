@@ -1,0 +1,23 @@
+== Multitenant Blogs with dynamic layout
+
+Sample app integrating some concepts about subdomains, multitenancy and custom layouts in Rails, after many railscasts.
+
+Templating
+
+https://github.com/Shopify/liquid
+
+
+Article.count -> 0 #porque não está scoped
+
+Article.unscoped.count -> dá todos scoped
+
+For localhost custom domains, in order to use subdomains
+http://pow.cx/
+
+To start
+
+bundle
+
+rake db:migrate
+
+rake db:seed
