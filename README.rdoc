@@ -21,3 +21,9 @@ bundle
 rake db:migrate
 
 rake db:seed
+
+
+Example of the most simple custom template:
+
+Title: {{page_title}}
+Content: {{page_content}}
