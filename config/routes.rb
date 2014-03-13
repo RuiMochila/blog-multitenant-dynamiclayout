@@ -1,4 +1,10 @@
 BlogMultitenantDynamiclayout::Application.routes.draw do
+  mount Mercury::Engine => '/'
+
+  resources :pages do
+    member { post :mercury_update }
+  end
+
   resources :blogs
   resources :articles
   # match '', to: 'blogs#show', constraints: {subdomain: /.+/}

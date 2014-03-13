@@ -1,0 +1,12 @@
+<h1>Pages</h1>
+
+<% @pages.each do |page| %>
+  <div class="blog">
+    <h2><%= link_to page.name, page %></h2>
+    <div class="actions">
+      <%= link_to "Destroy", page, confirm: 'Are you sure?', method: :delete %>
+    </div>
+  </div>
+<% end %>
+
+<p><%= link_to "New Page", new_page_path %></p>

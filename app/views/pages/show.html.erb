@@ -1,0 +1,8 @@
+<h1><span id="page_name" data-mercury="full" data-type="editable"><%= raw @page.name %></span></h1>
+
+<!-- <div id="page_content" class="mercury-region" data-type="editable"> -->
+<div id="page_content" data-mercury="full" data-type="editable">
+  <%= raw @page.content %>
+</div>
+
+<p><%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", data: {save_url: mercury_update_page_path(@page)} %></p>

@@ -22,3 +22,5 @@ end
 
 gem 'jquery-rails'
 gem 'liquid'
+
+gem 'mercury-rails'
